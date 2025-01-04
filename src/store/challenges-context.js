@@ -1,10 +1,6 @@
 import { createContext, useState } from 'react';
 
-export const ChallengesContext = createContext({
-  challenges: [],
-  addChallenge: () => {},
-  updateChallengeStatus: () => {},
-});
+export const ChallengesContext = createContext(null);
 
 export default function ChallengesContextProvider({ children }) {
   const [challenges, setChallenges] = useState([]);
